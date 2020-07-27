@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class RegistrationController: UIViewController {
     
@@ -112,7 +113,17 @@ class RegistrationController: UIViewController {
     }
     
     @objc func handleRegistration() {
-        print("touch registration!!")
+        guard let email = emailTextField.text else { return }
+        guard let password = passwordTextField.text else { return }
+        
+        Auth.auth().createUser(withEmail: email, password: password) { (result, error) in
+            if let error = error {
+                print("DEBUG: Error is \(error.localizedDescription)")
+                return
+            }
+            
+            print("DEBUG: Successfully registered user")
+        }
     }
     
     //MARK: - Helpers
