@@ -139,7 +139,7 @@ class RegistrationController: UIViewController {
                     
                     guard let uid = result?.user.uid else { return }
 
-                    //Cria o banco de dados e referencia pelo id do usuario
+                    //Cria as colunas do banco de dados e referencia pelo id do usuario
                     let values = ["email": email,
                                   "username": username,
                                   "fullname": fullName,
