@@ -27,9 +27,9 @@ class MainTabController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+//        logUserOut()
+        view.backgroundColor = .twitterBlue
         authenticateUserAndConfigureUi()
-        configureViewControllers()
-        configureUI()
     }
     
     // MARK - API
@@ -37,9 +37,14 @@ class MainTabController: UITabBarController {
     func authenticateUserAndConfigureUi() {
         // if the user is not logged in
         if Auth.auth().currentUser == nil {
-            print("DEBUG: User is not logged in")
+            DispatchQueue.main.async {
+                let nav = UINavigationController(rootViewController: LoginController())
+                nav.modalPresentationStyle = .fullScreen
+                self.present(nav, animated: true, completion: nil)
+            }
         } else {
-            print("DEBUG: User is logged in!!!")
+            configureViewControllers()
+            configureUI()
         }
     }
     
@@ -47,7 +52,7 @@ class MainTabController: UITabBarController {
         do {
             try Auth.auth().signOut()
         } catch let error {
-            print("DEBUG: Failed to sign out with error")
+            print("DEBUG: Failed to sign out with error \(error.localizedDescription)")
         }
     }
     

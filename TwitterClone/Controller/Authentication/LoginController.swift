@@ -78,7 +78,12 @@ class LoginController: UIViewController {
     //MARK: - Selectors
     
     @objc func handleLogin() {
-        print("touch login!!")
+        guard let email = emailTextField.text else { return }
+        guard let password = passwordTextField.text else { return }
+        
+        AuthService.shared.logUserIn(withEmail: email, password: password) { (result, error) in
+            
+        }
     }
     
     @objc func handleShowSignUP() {
