@@ -5,13 +5,12 @@
 //  Created by Glayce on 18/07/20.
 //  Copyright © 2020 Glayce. All rights reserved.
 //
-//Adding branch develop
 
 import UIKit
 
 class LoginController: UIViewController {
     
-    //MARK: - Properties
+    // MARK: - Properties
     
     private let logoImageView: UIImageView = {
         let imageView = UIImageView()
@@ -67,22 +66,31 @@ class LoginController: UIViewController {
         button.addTarget(self, action: #selector(handleShowSignUP), for: .touchUpInside)
         return button
     }()
-    
-    //MARK: - Lifecycle
+     
+    // MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
     }
     
-    //MARK: - Selectors
+    // MARK: - Selectors
     
     @objc func handleLogin() {
         guard let email = emailTextField.text else { return }
         guard let password = passwordTextField.text else { return }
-        
+
         AuthService.shared.logUserIn(withEmail: email, password: password) { (result, error) in
+            if let error = error {
+                print("DEBUG: Error loggin in: \(error.localizedDescription)")
+            }
             
+            guard let window = UIApplication.shared.windows.first( where: {$0.isKeyWindow}) else { return }
+            guard let tab = window.rootViewController as? MainTabController else { return }
+            
+            tab.authenticateUserAndConfigureUi()
+            
+            self.dismiss(animated: true, completion: nil)
         }
     }
     
@@ -91,7 +99,7 @@ class LoginController: UIViewController {
         navigationController?.pushViewController(controller, animated: true)
     }
     
-    //MARK: - Helpers
+    // MARK: - Helpers
     
     func configureUI() {
         view.backgroundColor = .twitterBlue
