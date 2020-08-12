@@ -27,6 +27,7 @@
 		43828B8224DCC1DC009056B5 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43828B8124DCC1DC009056B5 /* AuthService.swift */; };
 		43F6FF0224CE93FD00468F40 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F6FF0124CE93FC00468F40 /* Constants.swift */; };
 		BAAB709FEE1F0C64DCC097FD /* Pods_TwitterCloneTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 403D5BDEDA98D2A99BD3F9A7 /* Pods_TwitterCloneTests.framework */; };
+		EB5F166524E3AC080087CD0E /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5F166424E3AC080087CD0E /* UserService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		8CF9FA9EBB42BC6ECE0001F8 /* Pods-TwitterClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitterClone.release.xcconfig"; path = "Target Support Files/Pods-TwitterClone/Pods-TwitterClone.release.xcconfig"; sourceTree = "<group>"; };
 		9B462ED3707080C0EF4D7D7E /* Pods-TwitterCloneTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitterCloneTests.debug.xcconfig"; path = "Target Support Files/Pods-TwitterCloneTests/Pods-TwitterCloneTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C390F35DDD7493A67821D0DC /* Pods-TwitterClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitterClone.debug.xcconfig"; path = "Target Support Files/Pods-TwitterClone/Pods-TwitterClone.debug.xcconfig"; sourceTree = "<group>"; };
+		EB5F166424E3AC080087CD0E /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				43828B8124DCC1DC009056B5 /* AuthService.swift */,
+				EB5F166424E3AC080087CD0E /* UserService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -389,6 +392,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB5F166524E3AC080087CD0E /* UserService.swift in Sources */,
 				4346110C24C69B3700DCEC1C /* AppDelegate.swift in Sources */,
 				4346113624C69D4B00DCEC1C /* LoginController.swift in Sources */,
 				4346114024C69D6000DCEC1C /* MainTabController.swift in Sources */,
