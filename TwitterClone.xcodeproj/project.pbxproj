@@ -30,6 +30,7 @@
 		EB4E8C08250430CB00E2EA16 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4E8C07250430CB00E2EA16 /* User.swift */; };
 		EB4E8C0A250481D700E2EA16 /* UploadTweetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4E8C09250481D700E2EA16 /* UploadTweetController.swift */; };
 		EB4E8C0C2506C42E00E2EA16 /* CaptionTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4E8C0B2506C42E00E2EA16 /* CaptionTextView.swift */; };
+		EB4E8C0E2506E2B000E2EA16 /* TweetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4E8C0D2506E2B000E2EA16 /* TweetService.swift */; };
 		EB5F166524E3AC080087CD0E /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5F166424E3AC080087CD0E /* UserService.swift */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +76,7 @@
 		EB4E8C07250430CB00E2EA16 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = SOURCE_ROOT; };
 		EB4E8C09250481D700E2EA16 /* UploadTweetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadTweetController.swift; sourceTree = "<group>"; };
 		EB4E8C0B2506C42E00E2EA16 /* CaptionTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CaptionTextView.swift; path = TwitterClone/Controller/CaptionTextView.swift; sourceTree = SOURCE_ROOT; };
+		EB4E8C0D2506E2B000E2EA16 /* TweetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetService.swift; sourceTree = "<group>"; };
 		EB5F166424E3AC080087CD0E /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -182,6 +184,7 @@
 			children = (
 				43828B8124DCC1DC009056B5 /* AuthService.swift */,
 				EB5F166424E3AC080087CD0E /* UserService.swift */,
+				EB4E8C0D2506E2B000E2EA16 /* TweetService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -418,6 +421,7 @@
 				4346114524C69DF800DCEC1C /* Extensions.swift in Sources */,
 				4346113D24C69D5A00DCEC1C /* FeedController.swift in Sources */,
 				43F6FF0224CE93FD00468F40 /* Constants.swift in Sources */,
+				EB4E8C0E2506E2B000E2EA16 /* TweetService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
