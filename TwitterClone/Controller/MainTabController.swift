@@ -36,7 +36,7 @@ class MainTabController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        logUserOut()
+//        logUserOut()
         
         view.backgroundColor = .twitterBlue
         authenticateUserAndConfigureUi()
@@ -75,7 +75,11 @@ class MainTabController: UITabBarController {
     
     //MARK - Selectors
     @objc func actionButtonTapped() {
-        print("button tapped")
+        guard let user = user else { return }
+        let controller = UploadTweetController(user: user)
+        let nav = UINavigationController(rootViewController: controller)
+        nav.modalPresentationStyle = .fullScreen
+        self.present(nav, animated: true, completion: nil)
     }
     
     // MARK - Helpers

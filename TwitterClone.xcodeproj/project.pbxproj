@@ -28,6 +28,7 @@
 		43F6FF0224CE93FD00468F40 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F6FF0124CE93FC00468F40 /* Constants.swift */; };
 		BAAB709FEE1F0C64DCC097FD /* Pods_TwitterCloneTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 403D5BDEDA98D2A99BD3F9A7 /* Pods_TwitterCloneTests.framework */; };
 		EB4E8C08250430CB00E2EA16 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4E8C07250430CB00E2EA16 /* User.swift */; };
+		EB4E8C0A250481D700E2EA16 /* UploadTweetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4E8C09250481D700E2EA16 /* UploadTweetController.swift */; };
 		EB5F166524E3AC080087CD0E /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5F166424E3AC080087CD0E /* UserService.swift */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +72,7 @@
 		9B462ED3707080C0EF4D7D7E /* Pods-TwitterCloneTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitterCloneTests.debug.xcconfig"; path = "Target Support Files/Pods-TwitterCloneTests/Pods-TwitterCloneTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C390F35DDD7493A67821D0DC /* Pods-TwitterClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitterClone.debug.xcconfig"; path = "Target Support Files/Pods-TwitterClone/Pods-TwitterClone.debug.xcconfig"; sourceTree = "<group>"; };
 		EB4E8C07250430CB00E2EA16 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = SOURCE_ROOT; };
+		EB4E8C09250481D700E2EA16 /* UploadTweetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadTweetController.swift; sourceTree = "<group>"; };
 		EB5F166424E3AC080087CD0E /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -191,6 +193,7 @@
 				4346113A24C69D5A00DCEC1C /* FeedController.swift */,
 				4346113E24C69D6000DCEC1C /* MainTabController.swift */,
 				4346113F24C69D6000DCEC1C /* NotificationsController.swift */,
+				EB4E8C09250481D700E2EA16 /* UploadTweetController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -403,6 +406,7 @@
 				4346113C24C69D5A00DCEC1C /* ExplorerController.swift in Sources */,
 				4346113B24C69D5A00DCEC1C /* ConversationsController.swift in Sources */,
 				43828B8224DCC1DC009056B5 /* AuthService.swift in Sources */,
+				EB4E8C0A250481D700E2EA16 /* UploadTweetController.swift in Sources */,
 				EB4E8C08250430CB00E2EA16 /* User.swift in Sources */,
 				4346113724C69D4B00DCEC1C /* RegistrationController.swift in Sources */,
 				4346110E24C69B3700DCEC1C /* SceneDelegate.swift in Sources */,
