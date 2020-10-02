@@ -32,6 +32,7 @@
 		EB4E8C0C2506C42E00E2EA16 /* CaptionTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4E8C0B2506C42E00E2EA16 /* CaptionTextView.swift */; };
 		EB4E8C0E2506E2B000E2EA16 /* TweetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4E8C0D2506E2B000E2EA16 /* TweetService.swift */; };
 		EB4E8C102506E9EA00E2EA16 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4E8C0F2506E9EA00E2EA16 /* Tweet.swift */; };
+		EB4E8C1E250F242900E2EA16 /* TweetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4E8C1D250F242900E2EA16 /* TweetCell.swift */; };
 		EB5F166524E3AC080087CD0E /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5F166424E3AC080087CD0E /* UserService.swift */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +80,7 @@
 		EB4E8C0B2506C42E00E2EA16 /* CaptionTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CaptionTextView.swift; path = TwitterClone/Controller/CaptionTextView.swift; sourceTree = SOURCE_ROOT; };
 		EB4E8C0D2506E2B000E2EA16 /* TweetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetService.swift; sourceTree = "<group>"; };
 		EB4E8C0F2506E9EA00E2EA16 /* Tweet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Tweet.swift; path = TwitterClone/API/Tweet.swift; sourceTree = SOURCE_ROOT; };
+		EB4E8C1D250F242900E2EA16 /* TweetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetCell.swift; sourceTree = "<group>"; };
 		EB5F166424E3AC080087CD0E /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -216,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				EB4E8C0B2506C42E00E2EA16 /* CaptionTextView.swift */,
+				EB4E8C1D250F242900E2EA16 /* TweetCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -420,6 +423,7 @@
 				EB4E8C08250430CB00E2EA16 /* User.swift in Sources */,
 				4346113724C69D4B00DCEC1C /* RegistrationController.swift in Sources */,
 				4346110E24C69B3700DCEC1C /* SceneDelegate.swift in Sources */,
+				EB4E8C1E250F242900E2EA16 /* TweetCell.swift in Sources */,
 				4346114424C69DF800DCEC1C /* Utilities.swift in Sources */,
 				4346114524C69DF800DCEC1C /* Extensions.swift in Sources */,
 				4346113D24C69D5A00DCEC1C /* FeedController.swift in Sources */,
